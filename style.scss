@@ -66,12 +66,6 @@ a {
     grid-template-columns: repeat(12,1fr);
 
     &_image {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF;
         grid-column: span 4;
         width: 378px;
         width: 100%;
@@ -80,6 +74,15 @@ a {
         padding-left: 32px;
         padding-bottom: 32px;
         border-radius: 16px;
+    }
+
+    &_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
     }
     
     &_image_1 {
@@ -97,6 +100,55 @@ a {
         background-repeat: no-repeat;
     }
     
+}
+
+.bottom {
+    min-height: 800px;
+    background: #000915;
+    display: flex;
+    align-items: center;
+
+    &_image {
+        height: 333px;
+        width: 485px;
+    }
+}
+
+.seasons {
+
+    &_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+        padding-top: 282px;
+        padding-bottom: 32px;
+    }
+
+    &_description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &_button {
+        background: #9C0332;
+        border-radius: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        width: 234.06px;
+        height: 48.6px;
+    }
 }
 
 /*For mobile phone*/
@@ -145,6 +197,43 @@ a {
             height: 300px;
             width: 343px;
             align-items: flex-end;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &_image {
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .seasons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &_title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #FFFFFF; 
+        }
+
+        &_description {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
         }
     }
     
