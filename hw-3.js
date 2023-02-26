@@ -74,9 +74,6 @@ switch (monthNumber) {
     break;
 }
 
-// Задание 6
-
-
 // Задание 7
 
 
