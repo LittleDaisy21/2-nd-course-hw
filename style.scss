@@ -22,80 +22,81 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
 
-.topcontent_title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    color: #FFFFFF;
-    padding-top: 217px;
-    padding-bottom: 32px;
-}
-
-.topcontent_subtitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
-    padding-bottom: 44px;
-}
-
-.topcontent_button {
-    background: #9C0332;
-    border-radius: 30px;
-    width: 234.06px;
-    height: 48.6px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    align-items: center;
-    color: #FFFFFF;
+    &_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+        padding-top: 217px;
+        padding-bottom: 32px;
+    }
+    
+    &_subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-bottom: 44px;
+    }
+    
+    &_button {
+        background: #9C0332;
+        border-radius: 30px;
+        width: 234.06px;
+        height: 48.6px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
 }
 
 .catalog {
-    height: 556px;
+    min-height: 556px;
     background: #000915;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12,1fr);
-}
 
-.catalog_image {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: #FFFFFF;
-    grid-column: span 4;
-    width: 378px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 32px;
-    padding-bottom: 32px;
-}
-
-.catalog_image_1 {
-    background-image: url(img/game1.png);
-    background-repeat: no-repeat;
-}
-
-.catalog_image_2 {
-    background-image: url(img/game2.png);
-    background-repeat: no-repeat;
-}
-
-.catalog_image_3 {
-    background-image: url(img/game3.png);
-    background-repeat: no-repeat;
+    &_image {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        grid-column: span 4;
+        width: 378px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        border-radius: 16px;
+    }
+    
+    &_image_1 {
+        background-image: url(img/game1.png);
+        background-repeat: no-repeat;
+    }
+    
+    &_image_2 {
+        background-image: url(img/game2.png);
+        background-repeat: no-repeat;
+    }
+    
+    &_image_3 {
+        background-image: url(img/game3.png);
+        background-repeat: no-repeat;
+    }
+    
 }
 
 /*For mobile phone*/
@@ -108,34 +109,43 @@ a {
 
     .topcontent {
         height: 735px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
 
         &_title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+                color: #FFFFFF;
+                padding-top: 238px;
+            }
             
+            &_subtitle {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+
+    .catalog {
+        height: 1221px;
+        align-content: center;
+
+        &_image {
+            grid-column: 1/-1;
+            height: 300px;
+            width: 343px;
+            align-items: flex-end;
         }
     }
     
-    .topcontent_title {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .topcontent_subtitle {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .catalog_image {
-        grid-column: 1/-1;
-        height: 300px;
-    }
 }
