@@ -75,9 +75,24 @@ switch (monthNumber) {
 }
 
 // Задание 7
-
+let answer = Number(prompt('Пожалуйста, введите любое число'));
+if (answer % 2) {
+    alert('Число нечетное');
+} else {
+    alert('Число четное');
+}
 
 // Задание 8
+let clientOS = Number(prompt('Укажите какой системой вы пользуетесь: 0 — iOS, 1 — Android'));
+if (clientOS === 0) {
+    alert('Установите версию приложения для iOS по ссылке');
+}
+else if (clientOS === 1) {
+    alert('Установите версию приложения для Android по ссылке');
+}
+else {
+    alert('Данные введены неправильно')
+}
 
 
 // Задание 9
