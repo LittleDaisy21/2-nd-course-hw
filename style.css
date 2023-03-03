@@ -64,8 +64,6 @@ a {
 }
 .catalog_image {
   grid-column: span 4;
-  width: 378px;
-  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 32px;
@@ -98,12 +96,15 @@ a {
   background: #000915;
   display: flex;
   align-items: center;
-}
-.bottom_image {
-  height: 333px;
-  width: 485px;
+  justify-content: space-between;
 }
 
+.seasons {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .seasons_title {
   font-family: "Montserrat";
   font-style: normal;
@@ -111,8 +112,10 @@ a {
   font-size: 48px;
   line-height: 59px;
   color: #FFFFFF;
-  padding-top: 282px;
   padding-bottom: 32px;
+}
+.seasons_title::after {
+  content: "!";
 }
 .seasons_description {
   font-family: "Montserrat";
@@ -134,6 +137,15 @@ a {
   color: #FFFFFF;
   width: 234.06px;
   height: 48.6px;
+}
+
+.bottom_image {
+  max-height: 333px;
+  max-width: 485px;
+}
+
+.image_console {
+  width: 100%;
 }
 
 /*For mobile phone*/
@@ -179,20 +191,23 @@ a {
     align-items: flex-end;
   }
   .bottom {
+    min-height: 654px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom: 64px;
   }
   .bottom_image {
-    height: auto;
-    width: auto;
+    height: 236px;
   }
   .seasons {
+    width: 343px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
   }
   .seasons_title {
     font-family: "Montserrat";
@@ -202,6 +217,9 @@ a {
     line-height: 39px;
     color: #FFFFFF;
   }
+  .seasons_title::after {
+    content: none;
+  }
   .seasons_description {
     font-family: "Montserrat";
     font-style: normal;
@@ -209,5 +227,6 @@ a {
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
