@@ -1,3 +1,13 @@
+@keyframes Button_play {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(247, 247, 247, 0.496);
+    transform: scale(1.05);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -53,14 +63,23 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+  transition: all 0.3s;
+}
+.topcontent_button:hover {
+  animation: Button_play 1s ease 0s 1 normal forwards;
+  cursor: pointer;
 }
 
 .catalog {
   min-height: 556px;
+  padding-top: 128px;
   background: #000915;
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(12, 1fr);
+}
+.catalog_image:hover {
+  transform: scale(1.05);
 }
 .catalog_image {
   grid-column: span 4;
@@ -69,6 +88,8 @@ a {
   padding-left: 32px;
   padding-bottom: 32px;
   border-radius: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 .catalog_title {
   font-family: "Montserrat";
@@ -137,6 +158,11 @@ a {
   color: #FFFFFF;
   width: 234.06px;
   height: 48.6px;
+  transition: all 0.3s;
+}
+.seasons_button:hover {
+  animation: Button_play 1s ease 0s 1 normal forwards;
+  cursor: pointer;
 }
 
 .bottom_image {
