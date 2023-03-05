@@ -83,7 +83,7 @@ a {
     background: #000915;
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
 
     &_image:hover {
         transform: scale(1.05);
@@ -91,10 +91,9 @@ a {
 
     &_image {
         grid-column: span 4;
+        height: 300px;
         display: flex;
-        align-items: center;
-        padding-left: 32px;
-        padding-bottom: 32px;
+        align-items: flex-end;
         border-radius: 16px;
         transition: all .3s;
         cursor: pointer;
@@ -107,6 +106,8 @@ a {
         font-size: 24px;
         line-height: 32px;
         color: #FFFFFF;
+        padding-left: 32px;
+        padding-bottom: 32px;
     }
     
     &_image_1 {
@@ -234,11 +235,10 @@ a {
     .catalog {
         height: 1221px;
         align-content: center;
+        grid-template-columns: repeat(4, 1fr);
 
         &_image {
             grid-column: 1/-1;
-            height: 300px;
-            width: 343px;
             align-items: flex-end;
         }
     }
