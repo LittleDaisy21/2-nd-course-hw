@@ -97,4 +97,17 @@ if (clientOS === 0) {
 
 
 // Задание 9
-let
+let clientDeviceYear = Number(prompt('Укажите год производства вашего телефона'));
+clientOS = Number(prompt('Укажите какой системой вы пользуетесь: 0 — iOS, 1 — Android'));
+if (clientDeviceYear >= 2015 && clientOS === 0) {
+    alert('Установите версию приложения для iOS по ссылке');
+} else if (clientDeviceYear >= 2015 && clientOS === 1) {
+    alert('Установите версию приложения для Android по ссылке');
+} else if (clientDeviceYear < 2015 && clientOS === 0) {
+    alert('Установите облегченную версию приложения для iOS по ссылке');
+} else if (clientDeviceYear < 2015 && clientOS === 1) {
+    alert('Установите облегченную версию приложения для Android по ссылке');
+} else {
+    alert('Данные введены неправильно');
+}
+
