@@ -34,12 +34,16 @@ for (let salary in obj) {
 
 // Задание 5
 let n = 1000;
-let num;
-do {
-    num = n / 2;
-} while (num >= 50) {
-    console.log(num);
+let num = 1;
+while (n >= 50) {
+  console.log(n);
+  n /= 2; // n = n / 2;
+  console.log(num);
+  num++;
 }
         
 
 // Задание 6
+for (let Friday = 5; Friday <= 31; Friday += 7) {
+    alert(`Сегодня пятница, ${Friday}-е число. Необходимо подготовить отчет.`);
+}
