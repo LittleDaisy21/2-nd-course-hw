@@ -110,4 +110,4 @@ function seasonsGame() {
     } else {
         alert ('Вы ввели неправильное значение');
     }
-};
+}
