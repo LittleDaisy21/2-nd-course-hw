@@ -82,16 +82,32 @@ console.log(result);
 
 
 // Задание 6
-userNumber = Number(prompt('Пожалуйста, введите любое число'));
+let userNumber = Number(prompt('Пожалуйста, введите любое число'));
 result = userNumber ** 3
 function cubeNumber(userNumber, result) {
     if (!isNaN(userNumber)) {
-        return(`${userNumber} в кубе равняется ${result}`);
+    return(`${userNumber} в кубе равняется ${result}`);
     } else {
-        alert ('Переданный параметр не является числом');
-        }
+    alert ('Переданный параметр не является числом');
+    }
 };
 
 cubeNumber();
 
 console.log(cubeNumber(userNumber, result));
+
+// Задание 7
+function seasonsGame() {
+    let monthNumber = Number(prompt('Выберите месяц от 1 до 12'));
+    if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
+    alert ("Зима");
+    } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
+        alert ("Весна");
+    } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
+        alert ("Лето");
+    } else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
+        alert ("Осень");
+    } else {
+        alert ('Вы ввели неправильное значение');
+    }
+};

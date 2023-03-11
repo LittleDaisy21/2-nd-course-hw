@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <script src="hw-5.js"></script>
     <div class="topcontent center">
         <h1 class="topcontent_title">Добро пожаловать <br> на мой сайт !</h1>
         <p class="topcontent_subtitle">Вам предстоит пройти несколько увлекательных игр. <br> Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
@@ -22,14 +21,24 @@
         <div class="catalog_image catalog_image_2"><a class="catalog_title" href="#">Игра 2</a></div>
         <div class="catalog_image catalog_image_3"><a class="catalog_title" href="#">Игра 3</a></div>
     </div>
-    <div class="bottom center">
+    <div class="middleBlock center">
         <div class="seasons">
             <h2 class="seasons_title">Времена года</h2>
             <p class="seasons_description">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <button class="seasons_button">Играть!</button>
+            <button onclick="seasonsGame" class="seasons_button">Играть!</button><script src="hw-5.js"></script>
         </div>
-        <div class="bottom_image">
+        <div class="middleBlock_image">
             <a href="#"><img src="img/console.png" alt="Console" class="image_console"></a>
+        </div>
+    </div>
+    <div class="bottom center">
+        <div class="bottom_image">
+            <a href="#"><img src="img/console_flowers.png" alt="Console" class="image_console"></a>
+        </div>
+        <div class="words">
+            <h2 class="words_title">Запомни слова</h2>
+            <p class="words_description">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="words_button">Играть</button>
         </div>
     </div>
 </body>
