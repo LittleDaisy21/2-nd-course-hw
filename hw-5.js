@@ -1,3 +1,4 @@
+/*
 // Задание 1
 
 function smallNumber(a, b) {
@@ -95,6 +96,7 @@ function cubeNumber(userNumber, result) {
 cubeNumber();
 
 console.log(cubeNumber(userNumber, result));
+*/
 
 // Задание 7
 function seasonsGame() {
