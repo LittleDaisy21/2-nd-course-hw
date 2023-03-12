@@ -1,5 +1,4 @@
 // Задание 1
-
 let numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
@@ -76,7 +75,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log(sum);
 
-
+/*
 // Задание 11
 let randomArray = (length, max) => [...new Array(length)]
     .map(() => Math.round(Math.random() * max));
