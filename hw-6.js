@@ -19,11 +19,18 @@ numbs = [1, 3, 5, 10, 20];
 
 
 // Задание 4
-let arr = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
+let arr = [];
+
+for (let i = 0; i < 3; i++) {
+
+let innerArr = [];
+
+for (let j = 0; j < 3; j++) {
+innerArr.push(1);
+}
+arr.push(innerArr);
+}
+    
 console.log(arr);
 
 
@@ -75,17 +82,38 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log(sum);
 
-/*
+
 // Задание 11
-let randomArray = (length, max) => [...new Array(length)]
-    .map(() => Math.round(Math.random() * max));
+let array = [];
+for (let i = 0; i <= 10; i++) {
+    array.push(Math.round(Math.random() * 10));
+}
 
-console.log(randomArray(10, 10));
+console.log(array);
 
-let evenNumbers = randomArray();
-evenNumbers.filter(num => num % 2 === 0);
-console.log(evenNumbers);
+let evenArray = [];
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+        evenArray.push(array[i]);
+    }
+}
+
+console.log(evenArray);
+
+ // Задание 12
+let newArray = [];
+for (let i = 0; i < 6; i++) {
+    newArray.push(Math.round(Math.random() * 10));
+}
+
+console.log(newArray);
+
+const getAverage = (newArray) => {
+    const result = newArray.reduce((sum, el) => sum + el);
+    const length = newArray.length;
+    return Math.floor(result / length);
+};
 
 
-
-// Задание 12
+console.log(getAverage(newArray));
