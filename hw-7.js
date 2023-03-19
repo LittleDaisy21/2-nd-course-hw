@@ -36,12 +36,20 @@ console.log(minNumber);
 
 // Задание 5
 
+function getRandomInt(max) {
+    return Math.round(Math.random() * 11);
+  }
 
-
+  getRandomInt();
 
 // Задание 6
 
 
+function getRandomArrNumbers(number) {
+    return Math.round(Math.random() * number);
+}
+
+getRandomArrNumbers(7);
 
 
 // Задание 7
