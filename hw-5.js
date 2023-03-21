@@ -1,4 +1,4 @@
-// Задание 1
+/*// Задание 1
 
 function smallNumber(a, b) {
     if (a > b) {
@@ -94,7 +94,7 @@ function cubeNumber(userNumber, result) {
 
 cubeNumber();
 
-console.log(cubeNumber(userNumber, result));
+console.log(cubeNumber(userNumber, result)); */
 
 // Задание 7
 function seasonsGame() {
