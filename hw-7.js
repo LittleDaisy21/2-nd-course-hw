@@ -1,3 +1,4 @@
+/*
 // Задание 1
 let sentence = 'js';
 console.log(sentence.toUpperCase());
@@ -77,7 +78,6 @@ console.log(currentDate);
 
 
 // Задание 10
-
 currentDate = new Date();
 const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
 "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
@@ -91,5 +91,23 @@ function date (currentDate) {
 }
 
 date(currentDate);
+*/
+
 
 // Задание 11
+function wordsGame() {
+    let fruitsList = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruitsList = fruitsList.sort(() => Math.random() - 0.5);
+    alert (fruitsList);
+    let firstEl = String(prompt('Чему равнялся первый элемент массива?'));
+    firstEl = firstEl.toLocaleLowerCase();
+    let lastEl = String(prompt('Чему равнялся последний элемент массива?'));
+    lastEl = lastEl.toLocaleLowerCase();
+    if (firstEl === fruitsList[0] && lastEl === fruitsList[6]) {
+        alert('Поздравляю, вы угадали!');
+    } else if (firstEl === fruitsList[0] || lastEl === fruitsList[6]) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Вы ответили неверно');
+    }
+}
