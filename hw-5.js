@@ -95,8 +95,8 @@ function cubeNumber(userNumber, result) {
 
 cubeNumber();
 
-console.log(cubeNumber(userNumber, result));
-*/
+hw-7
+console.log(cubeNumber(userNumber, result)); */
 
 // Задание 7
 function seasonsGame() {
