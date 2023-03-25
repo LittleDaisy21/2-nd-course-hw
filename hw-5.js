@@ -1,4 +1,5 @@
-/*// Задание 1
+/*
+// Задание 1
 
 function smallNumber(a, b) {
     if (a > b) {
@@ -94,6 +95,7 @@ function cubeNumber(userNumber, result) {
 
 cubeNumber();
 
+hw-7
 console.log(cubeNumber(userNumber, result)); */
 
 // Задание 7
@@ -110,4 +112,4 @@ function seasonsGame() {
     } else {
         alert ('Вы ввели неправильное значение');
     }
-};
+}
